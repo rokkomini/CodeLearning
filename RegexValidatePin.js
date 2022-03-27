@@ -6,8 +6,8 @@
 
 
 function validatePIN(pin) {
-  const fourDigits = /\b^\d{4}\b/g;
-  const sixDigits = /\b^\d{6}\b/g;
+  const fourDigits = /\b^\d{4}\b$/g;
+  const sixDigits = /\b^\d{6}\b$/g;
   if (pin.match(fourDigits) || pin.match(sixDigits)) {
     return true;
   } else {
@@ -15,4 +15,4 @@ function validatePIN(pin) {
   }
 }
 
-console.log(validatePIN('1234'));
+console.log(validatePIN('1234.0'));
