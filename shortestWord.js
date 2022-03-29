@@ -9,6 +9,3 @@ function findShort(string) {
   });
   return array[0].length
 }
-
-
-console.log(findShort('Boris is Sexyyy'));
